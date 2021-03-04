@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="common/css/normalize.css" rel="stylesheet"/>
+		<link href="common/css/reset.css" rel="stylesheet"/>
+		<title>Insert title here</title>
+		<style>
+			/* class1과 class2가 동시에 적용된 엘리먼트를 선택 */
+			.class1.class2 {
+				color : red;
+			}
+			
+			/* class1 또는 class2를 선택  */
+/* 			.class1, .class2 {
+				color : red;
+				
+			} */
+			
+			/* class3인 엘리먼트의 내용(자손) 중에서 class4가 선택 */
+/* 			.class3 .class4 {
+				color : red;
+			} */
+			
+			
+			/* class3에 있는 자식 엘리먼트 중에서 class4가 선택  */
+			.class3 > .class4 {
+				color : red;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<p>this is content1</p>
+		<p class="class1">this is content2</p>
+		<p class="class1 class2">this is content3</p>
+		<p class="class3">this is content4</p>
+		<div class="class3">
+			<p>this is content 5</p>
+			<p class="class4">this is content 6</p>
+		</div>
+	</body>
+</html>
